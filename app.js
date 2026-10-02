@@ -733,4 +733,198 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `).join('');
     }
+
+    // --- 10. INSTAGRAM REELS HORIZONTAL CAROUSEL & SCROLLING MODEL ---
+    const reelsTrack = document.getElementById('ig-reels-grid-track');
+    const scrollLeftBtn = document.getElementById('ig-scroll-left');
+    const scrollRightBtn = document.getElementById('ig-scroll-right');
+
+    if (scrollLeftBtn && reelsTrack) {
+        scrollLeftBtn.addEventListener('click', () => {
+            reelsTrack.scrollBy({ left: -300, behavior: 'smooth' });
+        });
+    }
+
+    if (scrollRightBtn && reelsTrack) {
+        scrollRightBtn.addEventListener('click', () => {
+            reelsTrack.scrollBy({ left: 300, behavior: 'smooth' });
+        });
+    }
+
+    const reelsData = [
+        {
+            id: "DNQaMZMyhDP",
+            url: "https://www.instagram.com/reel/DNQaMZMyhDP/",
+            title: "Cinematic South Indian Wedding Story",
+            likes: "14.2K",
+            audio: "Original Audio — Atchathai Studio",
+            thumb: "image/2.webp",
+            hashtags: "#AtchathaiPhotography #CinematicWedding #BridalGlow #TamilWedding"
+        },
+        {
+            id: "DOXPR_VE03z",
+            url: "https://www.instagram.com/reel/DOXPR_VE03z/",
+            title: "Golden Hour Pre-Wedding Romance",
+            likes: "18.9K",
+            audio: "Timeless Love Strings — Atchathai Edit",
+            thumb: "image/8.webp",
+            hashtags: "#PreWeddingShoot #GoldenHour #LoveStory #AtchathaiIN"
+        },
+        {
+            id: "DcdpARAzXQS",
+            url: "https://www.instagram.com/reel/DcdpARAzXQS/",
+            title: "Royal South Indian Bridal Portraiture",
+            likes: "22.5K",
+            audio: "Royal Saree Moments — Studio Mix",
+            thumb: "image/3.webp",
+            hashtags: "#BridalPortrait #SilkSaree #RoyalBride #AtchathaiMagic"
+        },
+        {
+            id: "DNQaMZMyhDP",
+            url: "https://www.instagram.com/reel/DNQaMZMyhDP/",
+            title: "Behind The Lens — Wedding Day Magic",
+            likes: "11.8K",
+            audio: "Behind The Scenes Vibe — Atchathai",
+            thumb: "image/9.webp",
+            hashtags: "#BehindTheScenes #WeddingPhotographer #CandidMoments"
+        },
+        {
+            id: "DOXPR_VE03z",
+            url: "https://www.instagram.com/reel/DOXPR_VE03z/",
+            title: "Candid Haldi Moments & Sunset Joy",
+            likes: "16.4K",
+            audio: "Celebration Beats — Live Audio",
+            thumb: "image/1.webp",
+            hashtags: "#HaldiCeremony #CandidPhotography #AtchathaiIN"
+        },
+        {
+            id: "DcdpARAzXQS",
+            url: "https://www.instagram.com/reel/DcdpARAzXQS/",
+            title: "Editorial Bridal Lookbook & High Fashion",
+            likes: "25.1K",
+            audio: "Vogue Editorial Symphony",
+            thumb: "image/4.webp",
+            hashtags: "#FashionPhotography #BridalVogue #EditorialShoot"
+        }
+    ];
+
+    let currentReelIndex = 0;
+    const igModal = document.getElementById('ig-reels-modal');
+    const igModalClose = document.getElementById('ig-modal-close');
+    const igModalBackdrop = document.getElementById('ig-modal-backdrop');
+    const igIframe = document.getElementById('ig-embed-iframe');
+    const igPoster = document.getElementById('ig-modal-poster');
+    const igFallbackLink = document.getElementById('ig-fallback-play-link');
+    const igCaption = document.getElementById('ig-modal-caption');
+    const igHashtags = document.getElementById('ig-modal-hashtags');
+    const igAudio = document.getElementById('ig-audio-title');
+    const igLikes = document.getElementById('ig-like-count');
+    const igCounter = document.getElementById('ig-reel-counter');
+    const igExternalLink = document.getElementById('ig-external-link');
+    const igPrevBtn = document.getElementById('ig-prev-reel');
+    const igNextBtn = document.getElementById('ig-next-reel');
+    const igLikeBtn = document.getElementById('ig-like-btn');
+    const igShareBtn = document.getElementById('ig-share-btn');
+    const igPhoneFrame = document.getElementById('ig-phone-frame');
+
+    function updateReelView(index) {
+        if (index < 0) index = reelsData.length - 1;
+        if (index >= reelsData.length) index = 0;
+        currentReelIndex = index;
+
+        const reel = reelsData[currentReelIndex];
+
+        if (igIframe) igIframe.src = `https://www.instagram.com/reel/${reel.id}/embed/`;
+        if (igPoster) igPoster.src = reel.thumb;
+        if (igFallbackLink) igFallbackLink.href = reel.url;
+        if (igCaption) igCaption.textContent = reel.title;
+        if (igHashtags) igHashtags.textContent = reel.hashtags;
+        if (igAudio) igAudio.textContent = reel.audio;
+        if (igLikes) igLikes.textContent = reel.likes;
+        if (igCounter) igCounter.textContent = `${currentReelIndex + 1} / ${reelsData.length}`;
+        if (igExternalLink) igExternalLink.href = reel.url;
+
+        if (igLikeBtn) igLikeBtn.classList.remove('liked');
+    }
+
+    function openReelsModal(index) {
+        updateReelView(index);
+        if (igModal) {
+            igModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeReelsModal() {
+        if (igModal) {
+            igModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        if (igIframe) igIframe.src = '';
+    }
+
+    const reelCards = document.querySelectorAll('.ig-reel-card');
+    reelCards.forEach((card) => {
+        card.addEventListener('click', () => {
+            const index = parseInt(card.getAttribute('data-index') || '0', 10);
+            openReelsModal(index);
+        });
+    });
+
+    if (igPrevBtn) igPrevBtn.addEventListener('click', () => updateReelView(currentReelIndex - 1));
+    if (igNextBtn) igNextBtn.addEventListener('click', () => updateReelView(currentReelIndex + 1));
+    if (igModalClose) igModalClose.addEventListener('click', closeReelsModal);
+    if (igModalBackdrop) igModalBackdrop.addEventListener('click', closeReelsModal);
+
+    if (igLikeBtn) {
+        igLikeBtn.addEventListener('click', () => {
+            igLikeBtn.classList.toggle('liked');
+        });
+    }
+
+    if (igShareBtn) {
+        igShareBtn.addEventListener('click', () => {
+            const currentUrl = reelsData[currentReelIndex].url;
+            navigator.clipboard.writeText(currentUrl).then(() => {
+                const toast = document.createElement('div');
+                toast.style.cssText = `
+                    position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+                    background: var(--gold-primary); color: #000; font-weight: 700;
+                    padding: 10px 20px; border-radius: 25px; z-index: 200000;
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.5); font-size: 0.85rem;
+                `;
+                toast.textContent = '✨ Reel link copied to clipboard!';
+                document.body.appendChild(toast);
+                setTimeout(() => toast.remove(), 2500);
+            });
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (!igModal || !igModal.classList.contains('active')) return;
+        if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+            updateReelView(currentReelIndex - 1);
+        } else if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+            e.preventDefault();
+            updateReelView(currentReelIndex + 1);
+        } else if (e.key === 'Escape') {
+            closeReelsModal();
+        }
+    });
+
+    let wheelCooldown = false;
+    if (igPhoneFrame) {
+        igPhoneFrame.addEventListener('wheel', (e) => {
+            if (!igModal || !igModal.classList.contains('active')) return;
+            if (wheelCooldown) return;
+            wheelCooldown = true;
+            if (e.deltaY > 0) {
+                updateReelView(currentReelIndex + 1);
+            } else if (e.deltaY < 0) {
+                updateReelView(currentReelIndex - 1);
+            }
+            setTimeout(() => { wheelCooldown = false; }, 400);
+        }, { passive: true });
+    }
 });
