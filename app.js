@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             title: "Royal Indian Bridal Portrait",
             category: "wedding",
-            img: "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=1000&auto=format&fit=crop",
+            img: "https://image.cm/photo-1606800052052-a08af7148866?q=80&w=1000&auto=format&fit=crop",
             featured: true
         },
         {
