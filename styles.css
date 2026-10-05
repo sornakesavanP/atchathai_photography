@@ -36,7 +36,7 @@
     --radius-md: 8px;
     --radius-lg: 16px;
     --radius-full: 9999px;
-    --header-height: 85px;
+    --header-height: 95px;
     --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -106,6 +106,17 @@ img {
 .preloader-content {
     text-align: center;
     color: var(--gold-primary);
+}
+
+.preloader-logo-box {
+    margin-bottom: 1rem;
+}
+
+.preloader-logo-img {
+    max-width: 260px;
+    height: auto;
+    filter: drop-shadow(0 0 20px rgba(197, 160, 89, 0.5));
+    animation: pulse 1.8s infinite alternate;
 }
 
 .camera-shutter {
@@ -311,6 +322,19 @@ img {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+}
+
+.brand-emblem-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.5));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.brand-logo:hover .brand-emblem-img {
+    transform: scale(1.08) rotate(-3deg);
+    filter: drop-shadow(0 0 12px rgba(197, 160, 89, 0.7));
 }
 
 .brand-crest {
@@ -1599,6 +1623,34 @@ img {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 4rem;
     margin-bottom: 4rem;
+}
+
+.footer-logo-box {
+    margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+    max-width: 240px;
+    height: auto;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.5));
+}
+
+.contact-logo-box {
+    margin-bottom: 1rem;
+}
+
+.contact-logo-img {
+    max-width: 240px;
+    height: auto;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.5));
+}
+
+.admin-emblem-img {
+    height: 28px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 6px rgba(197, 160, 89, 0.5));
 }
 
 .footer-logo {
