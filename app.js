@@ -367,6 +367,62 @@ document.addEventListener('DOMContentLoaded', () => {
             category: "wedding",
             img: "image/73.JPG",
             featured: true
+        },
+        {
+            id: 56,
+            title: "Candid Model Studio Lookbook",
+            category: "model",
+            img: "image/91.jpeg",
+            featured: true
+        },
+        {
+            id: 57,
+            title: "High-Fashion Editorial Model",
+            category: "model",
+            img: "image/92.jpeg",
+            featured: true
+        },
+        {
+            id: 58,
+            title: "Contemporary Model Portraiture",
+            category: "model",
+            img: "image/93.jpeg",
+            featured: true
+        },
+        {
+            id: 59,
+            title: "Studio Fashion Model Pose",
+            category: "model",
+            img: "image/94.jpg",
+            featured: true
+        },
+        {
+            id: 60,
+            title: "Modern Glamour Model Shoot",
+            category: "model",
+            img: "image/95.jpeg",
+            featured: true
+        },
+        {
+            id: 61,
+            title: "Ethereal Model Editorial",
+            category: "model",
+            img: "image/96.jpeg",
+            featured: true
+        },
+        {
+            id: 62,
+            title: "Chic Vogue Style Model Series",
+            category: "model",
+            img: "image/97.jpeg",
+            featured: true
+        },
+        {
+            id: 63,
+            title: "Dramatic Lighting Model Portrait",
+            category: "model",
+            img: "image/98.jpeg",
+            featured: true
         }
     ];
 
