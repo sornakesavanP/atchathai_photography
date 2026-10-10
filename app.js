@@ -7,47 +7,35 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- 1. INITIAL STATE & LUXURY PORTFOLIO DATA ---
     const defaultPortfolio = [
-        {
-            id: 1,
-            title: "Royal Indian Bridal Portrait",
-            category: "wedding",
-            img: "https://image.cm/photo-1606800052052-a08af7148866?q=80&w=1000&auto=format&fit=crop",
-            featured: true
-        },
+
         {
             id: 2,
-            title: "Golden Hour Sunset Romance",
-            category: "pre-wedding",
-            img: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1000&auto=format&fit=crop",
+            title: "Golden Hour Sunset Promenade",
+            category: "outdoor",
+            img: "image/p1.jpg",
             featured: true
         },
-        {
-            id: 3,
-            title: "Modern Couple Studio Portrait",
-            category: "couples",
-            img: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000&auto=format&fit=crop",
-            featured: false
-        },
+
         {
             id: 4,
-            title: "Dramatic High-Contrast Editorial",
-            category: "portraits",
-            img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1000&auto=format&fit=crop",
+            title: "Dramatic High-Contrast Outdoor Portrait",
+            category: "outdoor",
+            img: "image/p2.jpg",
             featured: true
         },
         {
             id: 5,
-            title: "Luxury Silk Fashion Lookbook",
-            category: "fashion",
-            img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop",
-            featured: false
+            title: "Grand Wedding Reception & Gala",
+            category: "wedding",
+            img: "image/w0.4.jpeg",
+            featured: true
         },
         {
             id: 6,
-            title: "Vibrant Celebration Lights",
-            category: "events",
-            img: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000&auto=format&fit=crop",
-            featured: false
+            title: "Bridal Warmth & Celebration Joy",
+            category: "wedding",
+            img: "image/w0.5.jpeg",
+            featured: true
         },
         {
             id: 7,
@@ -67,56 +55,317 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 9,
             title: "Serene Mist & Landscape Silhouette",
             category: "outdoor",
-            img: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop",
-            featured: false
+            img: "image/p3.jpg",
+            featured: true
         },
+
         {
-            id: 10,
-            title: "Sacred Ritual & Temple Blessings",
-            category: "traditional",
-            img: "https://images.unsplash.com/photo-1605809761989-d4637a85c88b?q=80&w=1000&auto=format&fit=crop",
+            id: 11,
+            title: "Candid Haldi Joy & Festivities",
+            category: "wedding",
+            img: "image/w0.6.jpeg",
             featured: true
         },
         {
-            id: 11,
-            title: "Candid Haldi Joy & Colors",
-            category: "wedding",
-            img: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=1000&auto=format&fit=crop",
-            featured: false
-        },
-        {
             id: 12,
-            title: "Historical Fort Destination Shoot",
-            category: "pre-wedding",
-            img: "https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1000&auto=format&fit=crop",
+            title: "Historical Fort Outdoor Destination Shoot",
+            category: "outdoor",
+            img: "image/p4.jpg",
             featured: true
         },
         {
             id: 13,
-            title: "Intricate Mehendi Details & Ornaments",
-            category: "traditional",
-            img: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1000&auto=format&fit=crop",
+            title: "Intricate Bridal Mehendi Ornaments",
+            category: "wedding",
+            img: "image/w0.7.jpeg",
             featured: true
         },
         {
             id: 14,
-            title: "Monochrome Studio Shadow Play",
-            category: "portraits",
-            img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
-            featured: false
+            title: "Monochrome Outdoor Shadow Play",
+            category: "outdoor",
+            img: "image/p5.jpg",
+            featured: true
         },
         {
             id: 15,
-            title: "Beachfront Twilight Promenade",
+            title: "Beachfront Twilight Outdoor Session",
             category: "outdoor",
-            img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1000&auto=format&fit=crop",
-            featured: false
+            img: "image/p6.jpg",
+            featured: true
         },
         {
             id: 16,
-            title: "Modern Ethnic Editorial Shoot",
-            category: "fashion",
-            img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000&auto=format&fit=crop",
+            title: "Modern Ethnic Bridal Lookbook",
+            category: "wedding",
+            img: "image/w0.8.jpeg",
+            featured: true
+        },
+        {
+            id: 17,
+            title: "Sacred Vivaha Rituals",
+            category: "wedding",
+            img: "image/w0.9.jpeg",
+            featured: true
+        },
+        {
+            id: 18,
+            title: "Royal South Indian Bride & Groom",
+            category: "wedding",
+            img: "image/w1.jpeg",
+            featured: true
+        },
+        {
+            id: 19,
+            title: "Traditional Garland Ceremony",
+            category: "wedding",
+            img: "image/w2.jpeg",
+            featured: true
+        },
+        {
+            id: 20,
+            title: "Cinematic Wedding Moments",
+            category: "wedding",
+            img: "image/w3.jpeg",
+            featured: true
+        },
+        {
+            id: 21,
+            title: "Emotional Bridal Blessings",
+            category: "wedding",
+            img: "image/w4.jpeg",
+            featured: true
+        },
+        {
+            id: 22,
+            title: "Festive Wedding Celebrations",
+            category: "wedding",
+            img: "image/w5.jpeg",
+            featured: true
+        },
+        {
+            id: 23,
+            title: "Grand Mandap & Pheras",
+            category: "wedding",
+            img: "image/w6.jpeg",
+            featured: true
+        },
+        {
+            id: 24,
+            title: "Joyous Couple Reception Stories",
+            category: "wedding",
+            img: "image/w7.jpeg",
+            featured: true
+        },
+        {
+            id: 25,
+            title: "Timeless Bridal Elegance",
+            category: "wedding",
+            img: "image/@1.jpeg",
+            featured: true
+        },
+        {
+            id: 26,
+            title: "Royal Ceremonial Portraiture",
+            category: "wedding",
+            img: "image/@2.jpeg",
+            featured: true
+        },
+        {
+            id: 27,
+            title: "Sacred Vivaha Moments",
+            category: "wedding",
+            img: "image/@3.jpg",
+            featured: true
+        },
+        {
+            id: 28,
+            title: "Grand Festal Celebrations",
+            category: "wedding",
+            img: "image/@4.jpg",
+            featured: true
+        },
+        {
+            id: 29,
+            title: "Traditional Heritage Blessing",
+            category: "wedding",
+            img: "image/@5.jpg",
+            featured: true
+        },
+
+        {
+            id: 31,
+            title: "Emotional Haldi & Mehndi",
+            category: "wedding",
+            img: "image/@7.jpg",
+            featured: true
+        },
+        {
+            id: 32,
+            title: "Cinematic Wedding Procession",
+            category: "wedding",
+            img: "image/@8.jpg",
+            featured: true
+        },
+        {
+            id: 33,
+            title: "Luminous Bridal Portrait",
+            category: "wedding",
+            img: "image/@9.jpg",
+            featured: true
+        },
+        {
+            id: 34,
+            title: "Grand South Indian Bride",
+            category: "wedding",
+            img: "image/41.JPG",
+            featured: true
+        },
+        {
+            id: 35,
+            title: "Sacred Ceremony Moments",
+            category: "wedding",
+            img: "image/42.jpg",
+            featured: true
+        },
+        {
+            id: 36,
+            title: "Royal Couple Vivaha Blessings",
+            category: "wedding",
+            img: "image/43.JPG",
+            featured: true
+        },
+        {
+            id: 37,
+            title: "Cinematic Mandap Celebrations",
+            category: "wedding",
+            img: "image/44.JPG",
+            featured: true
+        },
+        {
+            id: 38,
+            title: "Ethereal Outdoor Nature Glow",
+            category: "outdoor",
+            img: "image/p7.jpg",
+            featured: true
+        },
+        {
+            id: 39,
+            title: "High-Fashion Editorial Model Shoot",
+            category: "model",
+            img: "image/4.webp",
+            featured: true
+        },
+        {
+            id: 40,
+            title: "Studio Fashion Model Lookbook",
+            category: "model",
+            img: "image/1.webp",
+            featured: true
+        },
+        {
+            id: 41,
+            title: "Candid Model Portfolio & Pose",
+            category: "model",
+            img: "image/Untitled-222.jpeg",
+            featured: true
+        },
+        {
+            id: 42,
+            title: "Monochrome Editorial Model Portrait",
+            category: "model",
+            img: "image/9.webp",
+            featured: true
+        },
+        {
+            id: 43,
+            title: "Sacred South Indian Vivaha Ritual",
+            category: "wedding",
+            img: "image/61.jpg",
+            featured: true
+        },
+        {
+            id: 44,
+            title: "Royal Bridal Garlands & Smiles",
+            category: "wedding",
+            img: "image/62.JPG",
+            featured: true
+        },
+        {
+            id: 45,
+            title: "Traditional Mandap Blessings",
+            category: "wedding",
+            img: "image/63.JPG",
+            featured: true
+        },
+        {
+            id: 46,
+            title: "Golden Hour Couple Moments",
+            category: "wedding",
+            img: "image/64.JPG",
+            featured: true
+        },
+        {
+            id: 47,
+            title: "Grand Wedding Reception Festive Joy",
+            category: "wedding",
+            img: "image/65.jpg",
+            featured: true
+        },
+        {
+            id: 48,
+            title: "Emotional Bridal Saptapadi",
+            category: "wedding",
+            img: "image/66.JPG",
+            featured: true
+        },
+        {
+            id: 49,
+            title: "Candid Haldi & Wedding Colors",
+            category: "wedding",
+            img: "image/67.JPG",
+            featured: true
+        },
+        {
+            id: 50,
+            title: "Intricate Mehendi Ornaments",
+            category: "wedding",
+            img: "image/68.jpg",
+            featured: true
+        },
+        {
+            id: 51,
+            title: "Royal Bride & Groom Heritage",
+            category: "wedding",
+            img: "image/69.jpg",
+            featured: true
+        },
+        {
+            id: 52,
+            title: "Sacred Temple Wedding Blessings",
+            category: "wedding",
+            img: "image/70.jpg",
+            featured: true
+        },
+        {
+            id: 53,
+            title: "Cinematic Marriage Procession",
+            category: "wedding",
+            img: "image/71.JPG",
+            featured: true
+        },
+        {
+            id: 54,
+            title: "Ethereal Bridal Glow & Jewellery",
+            category: "wedding",
+            img: "image/72.JPG",
+            featured: true
+        },
+        {
+            id: 55,
+            title: "Joyous Couple Celebration Story",
+            category: "wedding",
+            img: "image/73.JPG",
             featured: true
         }
     ];
@@ -139,7 +388,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Ananya Sharma",
             phone: "+91 8428757206",
             email: "ananya.s@outlook.com",
-            service: "Pre-Wedding Photography",
+            service: "Couple Photography",
             date: "2026-10-22",
             time: "Golden Hour (4:30 PM)",
             package: "Standard",
@@ -148,13 +397,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     ];
 
-    const defaultBlockedDates = ["2026-10-15", "2026-10-28", "2026-11-05"];
+    const defaultBlockedDates = [];
 
-    // Refresh Local Storage with fresh portfolio items
+    // Refresh Local Storage with fresh portfolio items & reset blocked dates
     localStorage.setItem('atp_portfolio', JSON.stringify(defaultPortfolio));
+    localStorage.setItem('atp_blocked_dates', JSON.stringify(defaultBlockedDates));
     let portfolioData = defaultPortfolio;
     let bookingsData = JSON.parse(localStorage.getItem('atp_bookings')) || defaultBookings;
-    let blockedDates = JSON.parse(localStorage.getItem('atp_blocked_dates')) || defaultBlockedDates;
+    let blockedDates = defaultBlockedDates;
     let messagesData = JSON.parse(localStorage.getItem('atp_messages')) || [];
 
     // State Tracking
@@ -373,7 +623,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (isBlocked) {
                 dayCell.classList.add('unavailable');
-                dayCell.title = "Fully Booked / Studio Unavailable";
+                dayCell.title = "Unavailable";
             } else {
                 dayCell.classList.add('available');
                 if (isSelected) dayCell.classList.add('selected');
@@ -764,11 +1014,11 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: "DOXPR_VE03z",
             url: "https://www.instagram.com/reel/DOXPR_VE03z/",
-            title: "Golden Hour Pre-Wedding Romance",
+            title: "Golden Hour Romantic Couple Shoot",
             likes: "18.9K",
             audio: "Timeless Love Strings — Atchathai Edit",
             thumb: "image/8.webp",
-            hashtags: "#PreWeddingShoot #GoldenHour #LoveStory #AtchathaiIN"
+            hashtags: "#CoupleShoot #GoldenHour #LoveStory #AtchathaiIN"
         },
         {
             id: "DcdpARAzXQS",
