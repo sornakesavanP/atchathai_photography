@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 2,
             title: "Golden Hour Sunset Promenade",
             category: "outdoor",
-            img: "image/p1.jpg",
+            img: "image/p1.webp",
             featured: true
         },
 
@@ -20,21 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 4,
             title: "Dramatic High-Contrast Outdoor Portrait",
             category: "outdoor",
-            img: "image/p2.jpg",
+            img: "image/p2.webp",
             featured: true
         },
         {
             id: 5,
             title: "Grand Wedding Reception & Gala",
             category: "wedding",
-            img: "image/w0.4.jpeg",
+            img: "image/w0.4.webp",
             featured: true
         },
         {
             id: 6,
             title: "Bridal Warmth & Celebration Joy",
             category: "wedding",
-            img: "image/w0.5.jpeg",
+            img: "image/w0.5.webp",
             featured: true
         },
         {
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 9,
             title: "Serene Mist & Landscape Silhouette",
             category: "outdoor",
-            img: "image/p3.jpg",
+            img: "image/p3.webp",
             featured: true
         },
 
@@ -63,133 +63,133 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 11,
             title: "Candid Haldi Joy & Festivities",
             category: "wedding",
-            img: "image/w0.6.jpeg",
+            img: "image/w0.6.webp",
             featured: true
         },
         {
             id: 12,
             title: "Historical Fort Outdoor Destination Shoot",
             category: "outdoor",
-            img: "image/p4.jpg",
+            img: "image/p4.webp",
             featured: true
         },
         {
             id: 13,
             title: "Intricate Bridal Mehendi Ornaments",
             category: "wedding",
-            img: "image/w0.7.jpeg",
+            img: "image/w0.7.webp",
             featured: true
         },
         {
             id: 14,
             title: "Monochrome Outdoor Shadow Play",
             category: "outdoor",
-            img: "image/p5.jpg",
+            img: "image/p5.webp",
             featured: true
         },
         {
             id: 15,
             title: "Beachfront Twilight Outdoor Session",
             category: "outdoor",
-            img: "image/p6.jpg",
+            img: "image/p6.webp",
             featured: true
         },
         {
             id: 16,
             title: "Modern Ethnic Bridal Lookbook",
             category: "wedding",
-            img: "image/w0.8.jpeg",
+            img: "image/w0.8.webp",
             featured: true
         },
         {
             id: 17,
             title: "Sacred Vivaha Rituals",
             category: "wedding",
-            img: "image/w0.9.jpeg",
+            img: "image/w0.9.webp",
             featured: true
         },
         {
             id: 18,
             title: "Royal South Indian Bride & Groom",
             category: "wedding",
-            img: "image/w1.jpeg",
+            img: "image/w1.webp",
             featured: true
         },
         {
             id: 19,
             title: "Traditional Garland Ceremony",
             category: "wedding",
-            img: "image/w2.jpeg",
+            img: "image/w2.webp",
             featured: true
         },
         {
             id: 20,
             title: "Cinematic Wedding Moments",
             category: "wedding",
-            img: "image/w3.jpeg",
+            img: "image/w3.webp",
             featured: true
         },
         {
             id: 21,
             title: "Emotional Bridal Blessings",
             category: "wedding",
-            img: "image/w4.jpeg",
+            img: "image/w4.webp",
             featured: true
         },
         {
             id: 22,
             title: "Festive Wedding Celebrations",
             category: "wedding",
-            img: "image/w5.jpeg",
+            img: "image/w5.webp",
             featured: true
         },
         {
             id: 23,
             title: "Grand Mandap & Pheras",
             category: "wedding",
-            img: "image/w6.jpeg",
+            img: "image/w6.webp",
             featured: true
         },
         {
             id: 24,
             title: "Joyous Couple Reception Stories",
             category: "wedding",
-            img: "image/w7.jpeg",
+            img: "image/w7.webp",
             featured: true
         },
         {
             id: 25,
             title: "Timeless Bridal Elegance",
             category: "wedding",
-            img: "image/@1.jpeg",
+            img: "image/@1.webp",
             featured: true
         },
         {
             id: 26,
             title: "Royal Ceremonial Portraiture",
             category: "wedding",
-            img: "image/@2.jpeg",
+            img: "image/@2.webp",
             featured: true
         },
         {
             id: 27,
             title: "Sacred Vivaha Moments",
             category: "wedding",
-            img: "image/@3.jpg",
+            img: "image/@3.webp",
             featured: true
         },
         {
             id: 28,
             title: "Grand Festal Celebrations",
             category: "wedding",
-            img: "image/@4.jpg",
+            img: "image/@4.webp",
             featured: true
         },
         {
             id: 29,
             title: "Traditional Heritage Blessing",
             category: "wedding",
-            img: "image/@5.jpg",
+            img: "image/@5.webp",
             featured: true
         },
 
@@ -197,56 +197,56 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 31,
             title: "Emotional Haldi & Mehndi",
             category: "wedding",
-            img: "image/@7.jpg",
+            img: "image/@7.webp",
             featured: true
         },
         {
             id: 32,
             title: "Cinematic Wedding Procession",
             category: "wedding",
-            img: "image/@8.jpg",
+            img: "image/@8.webp",
             featured: true
         },
         {
             id: 33,
             title: "Luminous Bridal Portrait",
             category: "wedding",
-            img: "image/@9.jpg",
+            img: "image/@9.webp",
             featured: true
         },
         {
             id: 34,
             title: "Grand South Indian Bride",
             category: "wedding",
-            img: "image/41.JPG",
+            img: "image/41.webp",
             featured: true
         },
         {
             id: 35,
             title: "Sacred Ceremony Moments",
             category: "wedding",
-            img: "image/42.jpg",
+            img: "image/42.webp",
             featured: true
         },
         {
             id: 36,
             title: "Royal Couple Vivaha Blessings",
             category: "wedding",
-            img: "image/43.JPG",
+            img: "image/43.webp",
             featured: true
         },
         {
             id: 37,
             title: "Cinematic Mandap Celebrations",
             category: "wedding",
-            img: "image/44.JPG",
+            img: "image/44.webp",
             featured: true
         },
         {
             id: 38,
             title: "Ethereal Outdoor Nature Glow",
             category: "outdoor",
-            img: "image/p7.jpg",
+            img: "image/p7.webp",
             featured: true
         },
         {
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 41,
             title: "Candid Model Portfolio & Pose",
             category: "model",
-            img: "image/Untitled-222.jpeg",
+            img: "image/Untitled-222.webp",
             featured: true
         },
         {
@@ -281,147 +281,259 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 43,
             title: "Sacred South Indian Vivaha Ritual",
             category: "wedding",
-            img: "image/61.jpg",
+            img: "image/61.webp",
             featured: true
         },
         {
             id: 44,
             title: "Royal Bridal Garlands & Smiles",
             category: "wedding",
-            img: "image/62.JPG",
+            img: "image/62.webp",
             featured: true
         },
         {
             id: 45,
             title: "Traditional Mandap Blessings",
             category: "wedding",
-            img: "image/63.JPG",
+            img: "image/63.webp",
             featured: true
         },
         {
             id: 46,
             title: "Golden Hour Couple Moments",
             category: "wedding",
-            img: "image/64.JPG",
+            img: "image/64.webp",
             featured: true
         },
         {
             id: 47,
             title: "Grand Wedding Reception Festive Joy",
             category: "wedding",
-            img: "image/65.jpg",
+            img: "image/65.webp",
             featured: true
         },
         {
             id: 48,
             title: "Emotional Bridal Saptapadi",
             category: "wedding",
-            img: "image/66.JPG",
+            img: "image/66.webp",
             featured: true
         },
         {
             id: 49,
             title: "Candid Haldi & Wedding Colors",
             category: "wedding",
-            img: "image/67.JPG",
+            img: "image/67.webp",
             featured: true
         },
         {
             id: 50,
             title: "Intricate Mehendi Ornaments",
             category: "wedding",
-            img: "image/68.jpg",
+            img: "image/68.webp",
             featured: true
         },
         {
             id: 51,
             title: "Royal Bride & Groom Heritage",
             category: "wedding",
-            img: "image/69.jpg",
+            img: "image/69.webp",
             featured: true
         },
         {
             id: 52,
             title: "Sacred Temple Wedding Blessings",
             category: "wedding",
-            img: "image/70.jpg",
+            img: "image/70.webp",
             featured: true
         },
         {
             id: 53,
             title: "Cinematic Marriage Procession",
             category: "wedding",
-            img: "image/71.JPG",
+            img: "image/71.webp",
             featured: true
         },
         {
             id: 54,
             title: "Ethereal Bridal Glow & Jewellery",
             category: "wedding",
-            img: "image/72.JPG",
+            img: "image/72.webp",
             featured: true
         },
         {
             id: 55,
             title: "Joyous Couple Celebration Story",
             category: "wedding",
-            img: "image/73.JPG",
+            img: "image/73.webp",
             featured: true
         },
         {
             id: 56,
             title: "Candid Model Studio Lookbook",
             category: "model",
-            img: "image/91.jpeg",
+            img: "image/91.webp",
             featured: true
         },
         {
             id: 57,
             title: "High-Fashion Editorial Model",
             category: "model",
-            img: "image/92.jpeg",
+            img: "image/92.webp",
             featured: true
         },
         {
             id: 58,
             title: "Contemporary Model Portraiture",
             category: "model",
-            img: "image/93.jpeg",
+            img: "image/93.webp",
             featured: true
         },
         {
             id: 59,
             title: "Studio Fashion Model Pose",
             category: "model",
-            img: "image/94.jpg",
+            img: "image/94.webp",
             featured: true
         },
         {
             id: 60,
             title: "Modern Glamour Model Shoot",
             category: "model",
-            img: "image/95.jpeg",
+            img: "image/95.webp",
             featured: true
         },
         {
             id: 61,
             title: "Ethereal Model Editorial",
             category: "model",
-            img: "image/96.jpeg",
+            img: "image/96.webp",
             featured: true
         },
         {
             id: 62,
             title: "Chic Vogue Style Model Series",
             category: "model",
-            img: "image/97.jpeg",
+            img: "image/97.webp",
             featured: true
         },
         {
             id: 63,
             title: "Dramatic Lighting Model Portrait",
             category: "model",
-            img: "image/98.jpeg",
+            img: "image/98.webp",
+            featured: true
+        },
+        {
+            id: 64,
+            title: "Scenic Outdoor Golden Hour Promenade",
+            category: "outdoor",
+            img: "image/101.webp",
+            featured: true
+        },
+        {
+            id: 65,
+            title: "Lush Verdant Nature Portrait Session",
+            category: "outdoor",
+            img: "image/102.webp",
+            featured: true
+        },
+        {
+            id: 66,
+            title: "Sunlit Meadow Candid Couple Story",
+            category: "outdoor",
+            img: "image/103.webp",
+            featured: true
+        },
+        {
+            id: 67,
+            title: "Breezy Open Air Outdoor Vista",
+            category: "outdoor",
+            img: "image/104.webp",
+            featured: true
+        },
+        {
+            id: 68,
+            title: "Serene Natural Horizon Landscape",
+            category: "outdoor",
+            img: "image/105.webp",
+            featured: true
+        },
+        {
+            id: 69,
+            title: "Ethereal Sunset Glow Outdoor Romance",
+            category: "outdoor",
+            img: "image/106.webp",
+            featured: true
+        },
+        {
+            id: 70,
+            title: "Dramatic Open Sky Portraiture",
+            category: "outdoor",
+            img: "image/107.webp",
+            featured: true
+        },
+        {
+            id: 71,
+            title: "Warm Twilight Sunset Reflections",
+            category: "outdoor",
+            img: "image/108.webp",
+            featured: true
+        },
+        {
+            id: 72,
+            title: "Picturesque Heritage Outdoor Frames",
+            category: "outdoor",
+            img: "image/109.webp",
+            featured: true
+        },
+        {
+            id: 73,
+            title: "Sun-Drenched Garden Candid Tale",
+            category: "outdoor",
+            img: "image/110.webp",
+            featured: true
+        },
+        {
+            id: 74,
+            title: "Majestic Outdoor Countryside Silhouette",
+            category: "outdoor",
+            img: "image/111.webp",
+            featured: true
+        },
+        {
+            id: 75,
+            title: "Charming Natural Light Portrait Session",
+            category: "outdoor",
+            img: "image/112.webp",
+            featured: true
+        },
+        {
+            id: 76,
+            title: "Timeless Outdoor Golden Radiance",
+            category: "outdoor",
+            img: "image/113.webp",
+            featured: true
+        },
+        {
+            id: 77,
+            title: "Breathtaking Open Air Sunset Melody",
+            category: "outdoor",
+            img: "image/114.webp",
+            featured: true
+        },
+        {
+            id: 78,
+            title: "Enchanted Outdoor Nature Harmony",
+            category: "outdoor",
+            img: "image/115.webp",
+            featured: true
+        },
+        {
+            id: 79,
+            title: "Vibrant Twilight Celebration Outdoors",
+            category: "outdoor",
+            img: "image/116.webp",
             featured: true
         }
     ];
